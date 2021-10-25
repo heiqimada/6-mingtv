@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     font-size: 14px;
+    box-sizing: border-box;
 }
 
 body {
@@ -48,11 +49,14 @@ a {
 }
 .itd_img a:last-child {
     display: inline-block;
-    color: #fff;
+    width: 180px;
+    text-align: center;
+    color: rgb(255, 255, 255);
     position: absolute;
     bottom: 30px;
-    left: 80px;
-    margin-left: -30px;   
+    left: -0px;
+    overflow: hidden;
+    /* margin-left: -30px;    */
 }
 /* introduce */
 .introduce {
@@ -83,6 +87,7 @@ a {
 /* content */
 .content {
     margin: 10px auto;
+    padding: 20px;
     border-radius: 10px;
     background-color: #fff;
     width: 90%;
@@ -90,7 +95,6 @@ a {
     flex-direction: column;
 }
 .bfform {
-    margin: 20px;
     margin-bottom: 0;
     font-size: 20px;
     font-weight: 600;
@@ -99,7 +103,38 @@ a {
     display: flex;
 }
 .content .lines li {
-    margin: 20px;
+    margin: 20px 10px 20px 0px;
+    width: 110px;
+    height: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.212);
+    text-align: center;
+    line-height: 28px;
 }
-
-
+.content .lines li:hover{
+    background-color: rgba(6, 243, 192, 0.247);
+    cursor:pointer;
+}
+.epiform {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.content .epi {
+    display: flex;
+    flex-wrap: wrap;
+}
+.content .epi li a {
+    display: inline-block;
+    width: 110px;
+    height: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.212);
+    text-align: center;
+    line-height: 28px;
+    margin: 10px 10px 0px 0px ;
+}
+.content .epi li a:hover {
+    background-color: rgba(6, 243, 192, 0.247);
+}
+.bgc {
+    background-color: rgba(6, 243, 192, 0.247);
+}

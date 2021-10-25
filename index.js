@@ -15,7 +15,7 @@ function getData(index){
    //获取相应中的数据
    axios({
        method:'post',
-       url:'http://api.mingtv.xyz/mpapi/recommend',
+       url:'https://api.mingtv.xyz/mpapi/recommend',
    }).then(function(response){
         console.log(response)
         let pic_id = response.data.data[index].vod_id;

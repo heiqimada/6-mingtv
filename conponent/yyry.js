@@ -10,7 +10,7 @@ function getDate() {
     // 当以post形式传递参数时，参数是以form data的形式在请求体中呈现，
     // 头信息中需要说明请求体的类型：Content-type=application/x-www-form-urlencoded
     // 参数放在send里面，即axios的data中，即请求体中
-    axios(`http://api.mingtv.xyz/mpapi/play`, {
+    axios(`https://api.mingtv.xyz/mpapi/play`, {
         method: 'post',
         header: {
             'Content-type':'application/x-www-form-urlencoded',

@@ -12,7 +12,10 @@ function getDate() {
     // 参数放在send里面，即axios的data中，即请求体中
     axios(`http://api.mingtv.xyz/mpapi/play`, {
         method: 'post',
-        header: 'Content-type=application/x-www-form-urlencoded',
+        header: {
+            'Content-type':'application/x-www-form-urlencoded',
+            'X-Content-Type-Options':'nosniff'
+            },
         data: `vod_id=${temp2}`
     }).then((response) => {
         // 1、introduce部分

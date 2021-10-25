@@ -34,6 +34,10 @@ function data_run(){
     axios({
         method:'post',
         url:'http://api.mingtv.xyz/mpapi/recommend',
+        header: {
+            'Content-type':'application/x-www-form-urlencoded',
+            'X-Content-Type-Options':'nosniff'
+            },
     }).then(function(response){
         console.log([...response.data.data].length);
         let data_number = [...response.data.data].length;

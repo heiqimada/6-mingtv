@@ -1,7 +1,7 @@
 function getDate() {
     // 获取introduce中的数据赋给相应的元素
     $.ajax({
-        url:`http://api.mingtv.xyz/mpapi/play?id=99`
+        url:`https://api.mingtv.xyz/mpapi/play?id=99`
     })
 }
 
@@ -16,7 +16,7 @@ function getDate() {
 function data_run(){
     // 获取数据长度
     $.ajax({
-        url:'http://api.mingtv.xyz/mpapi/recommend',
+        url:'https://api.mingtv.xyz/mpapi/recommend',
         success:function(result){
             let data_number = [...result.data].length;
             // console.log(data_number);

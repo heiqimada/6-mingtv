@@ -107,6 +107,7 @@ function getDate() {
                     console.log(epi_ul.childElementCount)
                 }
             }
+            
             // 生成播放集数列表
             const epi_ul = document.getElementById('epi');
             function creatEpiList(num) {

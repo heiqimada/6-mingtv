@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mingtv2</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <div id="yyry" class="yyry">
+        <p class="title">影院热映</p>
+        <!-- items -->
+        <ul id="rymovie-container" class="rymovie-container">
+            <!-- <li>
+                <a 点击时链接跳转到yyry.html,且在HTML后附带ID>
+                    <img src="https://pic.monidai.com/img/1625386617991-982b82.jpg" alt="">
+                    我和我的父辈
+                </a>
+            </li> -->
+        </ul>
+    </div>
+    <script>
+        // 一、动态生成所有的Li,页面生成的时候就直接出来
+        // 1、获取节点
+        const li_rymovie = document.createElement("li");
+        const a_container = document.createElement("a");
+        const img_item = document.createElement("img");
+        const p_item = document.createElement("p");
+        // 上树
+        container.appendChild(li_rymovie);
+        li_rymovie.appendChild(a_container);
+        a_container.appendChild(img_item);
+        a_container.appendChild(p_item);
+        //2、节点添加属性
+        // axios(url,{method,header,params,data,timeout,withCridentials})
+        axios(
+            'http://api.mingtv.xyz/mpapi/recommend',{
+            method:'get',
+            
+        })
+
+    </script>
+</body>
+
+</html>

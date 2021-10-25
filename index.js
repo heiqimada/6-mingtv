@@ -33,7 +33,7 @@ function data_run(){
     // 获取数据长度
     axios({
         method:'post',
-        url:'http://api.mingtv.xyz/mpapi/recommend',
+        url:'https://api.mingtv.xyz/mpapi/recommend',
         header: {
             'Content-type':'application/x-www-form-urlencoded',
             'X-Content-Type-Options':'nosniff'
